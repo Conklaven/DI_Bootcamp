@@ -5,13 +5,15 @@
 #navlogo {
     top: 10px;
     left: 0;
-    padding: 5px;
     width: 30px;
     height: 30px;
 }
 
 nav {
     background-color: black;
+    position: fixed;
+    width: 100%;
+    padding: 5px
 }
 .links {
     text-align: right;
@@ -28,12 +30,23 @@ nav {
 }
 .title {
     position: absolute;
+    width: 100%;
+    top: 50%;
+    font-size: 60px;
+    font-family: cursive;
 }
 h1 {
-    text-align: center; !important
+    text-align: center;
 }
 
 .bar {
     display: inline-block;
     width: 46%;
+}
+footer {
+    bottom: 0px;
+    left: 0;
+    background-color: black;
+    display: block;
+    color: white;
 }
