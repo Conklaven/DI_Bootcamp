@@ -1,31 +1,47 @@
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
-#navlogo {
-    top: 10px;
-    left: 0;
-    width: 30px;
-    height: 30px;
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
-
-nav {
-    background-color: black;
-    width: 100%;
-    padding: 5px
-}
-.links {
-    text-align: right;
-    padding-right: 40px;
+li {
+float: left;
 }
 
-.url {
-    padding-right: 10px;
-    font-size: 20px;
+a {
+display: block;
+padding: 8px;
+background-color: darkred;
 }
-.bar {
-    display: inline-block;
-    width: 46%;
+ul {
+  background-color: darkred;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #111;
 }
 .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -34,14 +50,14 @@ nav {
     text-align: center;
     font-family: arial;
     background-color: white;
-  }
+}
 .cardcontain {
     margin: 5px;
 }
-  .price {
+.price {
     color: grey;
     font-size: 22px;
-  }
+}
   
   .card button {
     border: none;
@@ -53,28 +69,27 @@ nav {
     cursor: pointer;
     width: 100%;
     font-size: 18px;
-  }
+}
   
-  .card button:hover {
+.card button:hover {
     opacity: 0.7;
-  }
-  .store {
+}
+.store {
       margin: 100px;
       display: inline-flex;
-  }
-  body {
-      background-image: url(https://images.pexels.com/photos/844297/pexels-photo-844297.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260);
-  }
-
-  #productimg {
+}
+#productimg {
       min-height: 250px;
       min-width: 250px
-  }
-  #mainimg {
+}
+#mainimg {
     width: 100%;
     height: 100%;
-  }
-  footer {
+}
+body {
+  background-image: url(https://images.pexels.com/photos/844297/pexels-photo-844297.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260);
+}
+footer {
     bottom: 0px;
     left: 0;
     background-color: black;
