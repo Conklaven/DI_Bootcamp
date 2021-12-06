@@ -37,3 +37,10 @@ nav {
     text-align: center;
     padding-bottom: 30px;
 }
+footer {
+    bottom: 0px;
+    left: 0;
+    background-color: black;
+    display: block;
+    color: white;
+}
