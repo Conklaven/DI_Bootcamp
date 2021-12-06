@@ -18,28 +18,66 @@ a {
 }
 ul {
     background-color: darkred;
-  }
-  ul {
+}
+ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
     background-color: #333;
-  }
+}
   
-  li {
+li {
     float: left;
-  }
+}
   
-  li a {
+li a {
     display: block;
     color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-  }
+}
   
   /* Change the link color to #111 (black) on hover */
-  li a:hover {
+li a:hover {
     background-color: #111;
-  }
+}
+.container {
+    position: relative;
+    text-align: center;
+    color: darkred;
+}
+.centered .title {
+    position: absolute;
+    top: 20%;
+    left: 57%;
+    transform: translate(-50%, -50%);
+}
+.title {
+      font-size: 8vw;
+      font-weight: bolder;
+      font-family:serif;
+}
+
+.centered .about {
+    position: absolute;
+    top: 48%;
+    left: 66%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+    font-size: 1.7vw;
+    width: 50%;
+}
+@media (max-width:1024px) {
+    ul {
+        background-color: white;
+    }
+    .centered .about {
+        color: black;
+        font-weight: bold;
+    }
+    .container {
+        background-image: url(https://imgur.com/a/42DyEVT);
+    }
+}

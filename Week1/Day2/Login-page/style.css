@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.left {
+    position: absolute;
+    width: 50%;
+    height: 700px;
+    background-color: rgb(250, 250, 250);
+    top: 0;
+    left: 0;
+}
+.right {
+    position: absolute;
+    width: 50%;
+    height: 700px;
+    background-image: url(https://i.imgur.com/Mvvy1O0.jpg);
+    top: 0;
+    right: 0;
+}
+.login {
+    text-align: center;
+    margin: 6vw;
+}
+.form {
+    display: inline-block;
+    width: 80%;
+}
+#email {
+    width: 30vw;
+    height: 30px;
+    margin-block: 15px;
+}
+#password {
+    width: 30vw;
+    height: 30px;
+    position: relative;
+}
+label {
+    position: absolute;
+    top: 22vw;
+    left: 9.7vw;
+}
+.password {
+    position: absolute;
+    top: 22vw;
+    right: 9.7vw;
+}
+input[type="submit"] {
+    position: absolute;
+    top: 25vw;
+    width: 30vw;
+    height: 30px;
+    left: 9.7vw;
+    background-image: url(https://i.imgur.com/Mvvy1O0.jpg);
+    color: white;
+}
+h1 {
+    font-size: 5vw;
+}
+h2 {
+    width: 100%; 
+    text-align: center; 
+    border-bottom: 1px solid #000; 
+    line-height: 0.1em;
+    margin: 10px 0 20px; 
+ } 
+ h2 span { 
+     background:rgb(250, 250, 250); 
+     padding:0 10px; 
+ }
+
+ .connect {
+     padding-block: 150px;
+ }
+ .social {
+    font-size: 25px;
+ }
+ h2 {
+     font-size: 20px;
+ }
+ .fab, .far {
+     padding-top: 10px;
+     padding-left: 10px;
+     padding-right: 10px;
+     color: white;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+ }
+ #user {
+     width: 30%;
+     display: block;
+     margin-left: auto;
+     margin-right: auto;
+     margin-top: 9.5vw;
+ }
+ .intro {
+     color:white;
+     text-align: center;
+     display: block;
+ }
+ .desc {
+     font-size: 2vw;
+ }
+ .button {
+     background-color: transparent;
+    border: solid white;
+    border-width: 1px;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+    border-radius: 16px;
+    font-size: 25px;
+  }
