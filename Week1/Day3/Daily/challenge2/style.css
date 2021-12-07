@@ -1,0 +1,28 @@
+.outer-div{
+ display: grid;
+ grid-template-columns: repeat(16,1fr);
+ grid-template-rows: 200px 200px;
+}
+.inner-div{
+ border: 1px solid #000;
+ padding: 30px;
+ text-align: center;
+}
+.box-1{
+    background-color: orange;
+}
+.box-2{
+    background-color: blue;
+}
+.box-3{
+    background-color: green;
+}
+.box-4{
+    background-color: red;
+}
+.box-5{
+    background-color: cyan;
+}
+.box-6{
+    background-color: pink;
+}

@@ -1,0 +1,31 @@
+.outer-div{
+ display: grid;
+ grid-template-columns: 1fr 2fr 1fr;
+ grid-template-rows: 100px 100px;
+ grid-gap: 5px
+}
+.inner-div{
+ border: 1px solid #000;
+ padding: 30px;
+ text-align: center;
+}
+.box-1{
+    background-color: orange;
+    grid-column-start: 2;
+    grid-row-end: 4;
+}
+.box-2{
+    background-color: blue;
+}
+.box-3{
+    background-color: green;
+}
+.box-4{
+    background-color: red;
+}
+.box-5{
+    background-color: cyan;
+}
+.box-6{
+    background-color: pink;
+}
