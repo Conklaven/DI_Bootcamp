@@ -1,0 +1,24 @@
+.outer-div{
+ display: grid;
+ grid-template-columns: repeat(16,1fr);
+ grid-gap: 3px;
+}
+.inner-div{
+ border: 1px solid #000;
+ padding: 30px;
+ text-align: center;
+ height: 20px;
+ 
+}
+.box-1{
+    background-color: rgb(145, 145, 145);
+}
+.box-2{
+    background-color: rgb(105, 105, 105);
+}
+.box-3{
+    background-color: rgb(65, 65, 65);
+}
+.box-4{
+    background-color: rgb(0, 0, 0);
+}
