@@ -1,0 +1,130 @@
+body { 
+    background-image: url(https://cdn.pixabay.com/photo/2020/02/19/22/57/blue-background-4863452_1280.jpg);
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+li {
+  float: left;
+}
+
+a {
+  display: block;
+  padding: 8px;
+  background-color: transparent;
+}
+ul {
+    background-color: transparent;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: transparent;
+}
+  
+li {
+    float: left;
+}
+  
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+}
+  
+  /* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: rgb(201, 199, 199);
+}
+li#Name {
+    padding-left: 10px;
+}
+nav {
+    width: 95%;
+}
+.page{
+    margin: 30px;
+    padding: 10px;
+    background-color: rgb(241, 241, 241);
+    border-radius: 20px;
+}
+#headshot {
+    display: block;
+    width: 300px;
+    height: 300px;
+    margin: 1em auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    -webkit-border-radius: 99em;
+    -moz-border-radius: 99em;
+    border-radius: 99em;
+    border: 5px solid #eee;
+    box-shadow: 0 3px 2px rgba(0, 0, 0, 0.3);
+}
+.main {
+    margin-top: 50px;
+    display: flex;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+}
+article {
+    width: 400px;
+}
+.button {
+    background-color: transparent;
+   border: solid rgb(80, 80, 80);
+   border-width: 2px;
+   color: rgb(0, 0, 0);
+   padding: 10px 20px;
+   text-align: center;
+   text-decoration: none;
+   display: block;
+   margin-top: 30px;
+   margin-left: auto;
+   margin-right: auto;
+   cursor: pointer;
+   border-radius: 16px;
+   font-size: 15px;
+ }
+ .buttons {
+     display: flex;
+ }
+ 
+ h1 {
+     margin-block-start: .2em;
+     font-size: 40px;
+ }
+.about {
+    margin-block-end: 0.3em;
+    margin-block-start: 2em;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.headername {
+    font-size: 20px;
+}
+.skills {
+    display: grid;
+    grid-column: 100px 100px;
+    justify-content: center;
+    justify-items: center;
+    /* align-items: baseline; */
+    grid-template-columns: 3fr 3fr;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+}
+#icon {
+    color: rgb(42, 164, 212);
+}
