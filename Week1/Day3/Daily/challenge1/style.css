@@ -2,104 +2,30 @@
     display: flex;
     height: 100vh;
     width: 100%;
-    flex-direction: row;
 }
 .inner-div{
     width: 100%;
-
 }
-.left{
+.side{
     width: 30%;
     display: flex;
     justify-content: space-around;
     flex-direction: column;
     align-items: center;
 }
-
-.left1{
+.side div{
     border: 2px solid #000;
     width: 60%;
     height: 20%;
     background-color: yellow;
 }
-.left2{
-    border: 2px solid #000;
-    width: 60%;
-    height: 20%;
-    background-color: yellow;
-}
-.left3{
-    border: 2px solid #000;
-    width: 60%;
-    height: 20%;
-    background-color: yellow;
-}
-.left4{
-    border: 2px solid #000;
-    width: 60%;
-    height: 20%;
-    background-color: yellow;
-}
-
-
-.right{
-    width: 30%;
-    display: flex;
-    justify-content: space-around;
-    flex-direction: column;
-    align-items: center;
-}
-.right1{
-    border: 2px solid #000;
-    width: 60%;
-    height: 20%;
-    background-color: yellow;
-}
-.right2{
-    border: 2px solid #000;
-    width: 60%;
-    height: 20%;
-    background-color: yellow;
-}
-.right3{
-    border: 2px solid #000;
-    width: 60%;
-    height: 20%;
-    background-color: yellow;
-}
-.right4{
-    border: 2px solid #000;
-    width: 60%;
-    height: 20%;
-    background-color: yellow;
-}
-
-
 .center{
     display: flex;
     justify-content: space-around;
     flex-direction: row;
     align-items: center;
 }
-.center1{
-    border: 2px solid #000;
-    width: 15%;
-    height: 20%;
-    background-color: yellow;
-}
-.center2{
-    border: 2px solid #000;
-    width: 15%;
-    height: 20%;
-    background-color: yellow;
-}
-.center3{
-    border: 2px solid #000;
-    width: 15%;
-    height: 20%;
-    background-color: yellow;
-}
-.center4{
+.center div{
     border: 2px solid #000;
     width: 15%;
     height: 20%;
