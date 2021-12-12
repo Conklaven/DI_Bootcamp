@@ -1,11 +1,14 @@
 body {
-    margin: 0;
+  text-align: center;
+  color:rgb(0, 0, 0) !;
 }
-/* Font for site */
-@import url('https://fonts.googleapis.com/css?family=Raleway');
 
-html,h1,h2,h3,h4,h5,h6,a{
+* { color:rgb(0, 0, 0); text-decoration: none;}
+html,h2,h3,h4,h5,h6,a{
     font-family: "Raleway";
+}
+h1 {
+font-family: 'Orbitron', sans-serif;
 }
 
 /* Add a black background color to the top navigation */
@@ -147,6 +150,9 @@ body{
     color: rgba(0, 0, 0, 0.75);
     font-family: 'Anonymous Pro', monospace;   
 }
+a.typewrite {
+  font-size: 50px;
+}
 
 /* Animation */
 .anim-typewriter{
@@ -168,22 +174,23 @@ body{
         top: 30%;
     }
     .centered h1{
-        font-size: 150px;
+        font-size: 120px;
     }
 }
 
 @media screen and (max-width: 600px) {
     .centered {
         left: 50% !important;
-        top: 19% !important;
-        text-align: left !important;
+        top: 28% !important;
+        position: relative !important;
+        transform: translate(-80%, -150%) !important;
     }
     .centered h1{
-        font-size: 60px !important;
+        font-size: 30px !important;
     }
-    .centered p{
-        font-size: 18px; 
-    }
+    a.typewrite {
+      font-size: 20px;
+  }
     .site {
         margin: 20px;
     }
