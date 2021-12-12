@@ -12,7 +12,7 @@ let myWatchedSeries = `${watchedSeries[0]}, ${watchedSeries[1]} and ${watchedSer
 console.log (`I watched ${watchedSeriesLength} series : ${myWatchedSeries}`)
 
 // --------------------------Exercise 2 part 2 go back and use indexof! ----------------
-watchedSeries[2] = "friends"
+watchedSeries[watchedSeries.indexOf("the big bang theory")] = "friends"
 let newSeries = "big brother";
 watchedSeries.push(newSeries);
 newSeries = "Survivor";
