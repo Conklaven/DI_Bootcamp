@@ -5,7 +5,10 @@ console.log(sentence)
 
 // ------------------------------------Exercise 2 -----------------------------
 
-let wordOne = "Memphis";
-let wordTwo = "Tennessee";
-let wordThree = wordOne.slice(0,2,"Te");
-console.log(wordThree);
+// let wordOne = "Memphis";
+// let wordTwo = "Tennessee";
+// let replace = nness
+// let wordThree = wordOne.slice(0,2,"Te");
+// console.log(wordThree);
+
+// ------------------------------------Exercise 3 -----------------------------
