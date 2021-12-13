@@ -34,7 +34,6 @@ if (number % 2 == 0) {
 
 let users = ["Lea123", "Princess45", "cat&doglovers", "helooo@000"]
 let numberOfUsers = users.length;
-console.log(numberOfUsers)
 let remainingNumber = numberOfUsers - 2;
 if (numberOfUsers <= 0) {
 	console.log(`No one is Online`)
@@ -45,4 +44,3 @@ if (numberOfUsers <= 0) {
 } else if (numberOfUsers >= 3) {
 	console.log(`${users[0]} and ${users[1]} and ${remainingNumber} other users are Online`)
 }
-
