@@ -12,7 +12,7 @@ function beer() {
         console.log(" ")
         console.log(`${start - i} bottles of beer on the wall`)
         console.log(`${start - i} bottles of beer`)
-        console.log(`take ${i} down pass it around`)
+        console.log(`take ${i} down pass them around`)
     }
 }
 beer()
