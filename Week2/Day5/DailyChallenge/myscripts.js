@@ -1,9 +1,9 @@
-let start;
+
 
 function beer() {
-    start = Number(prompt(" How many bottles of beer do you have?"));
+   let start = Number(prompt(" How many bottles of beer do you have?"));
 
-    for (i = 1; i <= start; i++) {
+    for (let i = 1; i <= start; i++) {
         if (i == 1) {
             console.log(`${start} bottles of beer on the wall`)
             console.log(`${start} bottles of beer`)
