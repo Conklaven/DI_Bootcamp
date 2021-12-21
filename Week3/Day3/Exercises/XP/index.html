@@ -2,15 +2,66 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <style>
+        #container {
+            width: 400px;
+            height: 400px;
+            position: relative;
+            background: yellow;
+        }
+
+        #animate {
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            background-color: red;
+        }
+        .dropContainer {
+            border: 3px solid black;
+            width: 75px;
+            height: 75px;
+           
+        }
+        #box {
+            border: 3px solid black;
+            width: 50px;
+            height: 50px;
+           margin: auto;
+           margin-top: 10px;
+            background-color: black;
+            color: white;
+            text-align: center;
+        }
+        .moved {
+            color: green !important;
+            background-color: green !important;
+        }
+        .inmotion{
+            border: 3px dashed red;
+        }
+
+        .over{
+            border: 3px dashed green;
+            width: 75px;
+            height: 75px;
+        }
+
+    </style>
 </head>
 
 <body>
+    <p><button id="" onclick="myMove()">Click Me</button></p>
+    <div id="container">
+        <div id="animate"></div>
+    </div>
     
-    
+    <div id="box" draggable="true">
+        <p>Move This</p>
+    </div>
+    To this box
+    <div class="dropContainer" id="dropContainer">
+     
+    </div>
     <script src="myscripts.js"></script>
 </body>
 
