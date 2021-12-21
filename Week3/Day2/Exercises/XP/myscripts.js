@@ -22,8 +22,8 @@ function clickToBold(e) {
 
 let hoverAction = document.getElementById("hovereffect")
 hoverAction.addEventListener("mouseover", randomSize )
-function randomSize() {
+function randomSize(e) {
     let newSize = (Math.floor(Math.random()*100)+1).toFixed(0);
     console.log(newSize)
-    hoverAction.style.fontSize = `${newSize}`
+    e.target.style.fontSize = `${newSize}px`
 }
