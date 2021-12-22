@@ -1,13 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/4e04cc6a27.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-  
+    <div class="top">
+        <form id="newForm">
+            <div class="title">
+            <label for="task">TO DO LIST</label>
+            </div>
+            <br>
+            <div class="topForm">
+            <input class="input" id="task" type="text" required placeholder= "new task" name="task">
+            <button class="button" id="btn" type="submit">ADD</button>
+        </div>
+        </form>
+    </div>
+    <div class="outer">
+    <div id="task-container" class="listTasks"></div>
+</div>
     <script src="myscripts.js"></script>
 </body>
+
 </html>

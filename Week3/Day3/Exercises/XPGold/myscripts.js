@@ -23,26 +23,31 @@ function startGame() {
         bottomContainer.appendChild(secondDiv);
         secondDiv.classList.add("empty");
         secondDiv.setAttribute("id", `bottom${empty}`);
-        secondDiv.addEventListener("dragenter", enterBox)
-        secondDiv.addEventListener("dragleave", exitBox)
-        secondDiv.addEventListener("dragover", draggingOver)
-        secondDiv.addEventListener("drop", dropping)
-
+        dropTartgets()
     }
 }
+function dropTartgets(){
+let allDropTargets = document.querySelectorAll(".empty");
 
+for (let dropzone of allDropTargets){
+	dropzone.addEventListener("dragover", draggingOver)
+	dropzone.addEventListener("dragenter", enterBox)
+	dropzone.addEventListener("dragleave", exitBox)
+	dropzone.addEventListener("drop", dropping)
+}
+}
 
 function dragging(e) {
-    let validDrop = document.getElementsByClassName("empty")
     e.target.classList.toggle("drag")
     e.dataTransfer.setData("text/plain", e.target.id);
+
     // validDrop.classList.replace("empty","inmotion");
 }
 function enterBox(e) {
-    e.target.classList.replace("inmotion", "over")
+    e.target.classList.add("over")
 }
 function exitBox(e) {
-    e.target.classList.replace("over", "inmotion")
+    e.target.classList.replace("over", "empty")
 }
 function draggingOver(e) {
     e.preventDefault();
@@ -52,5 +57,5 @@ function dropping(e) {
     let dataItem = e.dataTransfer.getData("text/plain");
     let draggedItem = document.getElementById(dataItem)
     e.target.appendChild(draggedItem);
-    newDiv.classList.add("moved")
+    e.target.classList.replace("over", "empty")
 }

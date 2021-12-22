@@ -1,0 +1,46 @@
+body{
+    margin: 0;
+    background-image: url(https://wallpapercave.com/wp/wp4464890.jpg);
+}
+.top {
+    text-align: center;
+    margin: 35px;
+}
+.topForm{
+    margin-top: 10px;
+    background-color: white;
+    margin: auto;
+    width: fit-content;
+}
+.title {
+    color: white;
+    font-weight: bold;
+    font-size: 40px;
+}
+.input{
+    background-color: white !important;
+    font-size:30px;
+}
+#task-container{
+    width: 350px;
+    background-color: white;
+    color: black;
+    margin: auto;
+
+}
+.taskItem{
+    border-bottom: 1px solid rgb(61, 159, 240);
+    font-size: 25px;
+}
+#btn{
+    font-size: 30px;
+    color: rgb(15, 36, 226);
+}
+.outer{
+    width: 456px;
+    background-color: white;
+    margin: auto;
+}
+input[type=checkbox]:checked + label.strikethrough{
+    text-decoration: line-through;
+  }

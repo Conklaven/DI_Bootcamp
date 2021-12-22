@@ -1,0 +1,36 @@
+body {
+  background-color: whitesmoke;
+}
+
+.parent {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 50%;
+  float: left;
+}
+
+.toppings {
+  display: grid;
+  right: 0;
+  top: 0;
+  justify-content: space-around;
+
+}
+
+.pizza {
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.after {
+  position: absolute !important;
+  top: 30px !important;
+  left: 35px !important;
+  /* z-index: 1; */
+}
+#imgOne{
+  width: 300px;
+}
