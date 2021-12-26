@@ -9,6 +9,7 @@
 
 //#2
 var a = 0;
+
 function q2() {
     a = 5;
 }
@@ -46,19 +47,25 @@ function q22() {
 
 // ------------------------exercise 2 ---------------------------------
 
-function winBattle(){
-    return true;
-}
+// function winBattle() {
+//     return true;
+// }
 
-function experiencePoints() {
-    if (winBattle()) {
-        return 10;
-    } else {
-        return 1;
-    }
-}
+// function experiencePoints() {
+//     if (winBattle()) {
+//         return 10;
+//     } else {
+//         return 1;
+//     }
+// }
 
-experiencePoints()
+// experiencePoints()
+
+// const experiencePoints = function () {
+//     winBattle() ? 10 : 1;
+//   };
+  
+//   experiencePoints();
 
 
 // ----------------------------exercise 3 ---------------------------
@@ -69,26 +76,34 @@ experiencePoints()
 
 // ----------------------------exercise 4 ---------------------------
 let color = ["Blue", "Green", "Red", "Orange", "Violet", "Indigo", "Yellow"];
-let ordinal = ["th","st","nd","rd"];
+let ordinal = ["th", "st", "nd", "rd"];
 
-color.forEach(function(element, index){
+color.forEach(function (element, index) {
     let colorName = element;
-    let position = index +1;
-        if (colorName == color[0]){
-            console.log(`${position}${ordinal[1]} choice is ${colorName}`)
-        } else if(colorName == color[1]){
-            console.log(`${position}${ordinal[2]} choice is ${colorName}`)
-        } else if(colorName == color[2]){
-            console.log(`${position}${ordinal[3]} choice is ${colorName}`)
-        } else if(colorName == color[3] || colorName == color[4] || colorName == color[5] || colorName == color[6]){
-            console.log(`${position}${ordinal[0]} choice is ${colorName}`)
-        }
-    })
+    let position = index + 1;
+    if (colorName == color[0]) {
+        console.log(`${position}${ordinal[1]} choice is ${colorName}`)
+    } else if (colorName == color[1]) {
+        console.log(`${position}${ordinal[2]} choice is ${colorName}`)
+    } else if (colorName == color[2]) {
+        console.log(`${position}${ordinal[3]} choice is ${colorName}`)
+    } else if (colorName == color[3] || colorName == color[4] || colorName == color[5] || colorName == color[6]) {
+        console.log(`${position}${ordinal[0]} choice is ${colorName}`)
+    }
+})
 
 // ----------------------------exercise 5 ---------------------------
-console.log(isString('hello')); 
-//true
-console.log(isString([1, 2, 4, 0]));
-//false
+// console.log(isString('hello'));
+// //true
+// console.log(isString([1, 2, 4, 0]));
+// //false
 
 // ----------------------------exercise 6 ---------------------------
+let bankAmount = 5000
+let tax = 1.17
+let details = ["+200", "-100", "+146", "+167", "-2900"]
+
+details.forEach((element, index, array) => element <0 ? array[index] = element * tax: "" );
+console.log(details);
+details.forEach((element, index,array) => bankAmount += array[index])
+console.log(bankAmount)
