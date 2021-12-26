@@ -53,17 +53,28 @@
 // * first by using function declarations
 // * then function expression,
 // * then arrow function
-let btn= document.getElementById("btn")
+// let btn= document.getElementById("btn")
 // btn.addEventListener("click", usergreet)
 // function usergreet(){
 //     alert("Hello User")
 // }
 
-btn.addEventListener("click", function(){
-    alert("hello User")
-})
+// btn.addEventListener("click", function(){
+//     alert("hello User")
+// })
 
 // btn.addEventListener("click", () => alert("hello User"))
 
+// Using this let classmates = ["Josh", "Lily", "Sophie", "Mark"];
+// Use for each and arrow function, to add a & after Sophie and a ! after all the other names
+// the result is ['Josh!', 'Lily!', 'Sophie&', 'Mark!']
+// Try to use tenary operator
 
+let classmates = ["Josh", "Lily", "Sophie", "Mark"];
+
+classmates.forEach((element, index,array) => element == "Sophie" ? array[index]+= "&": array[index] += "!")
+
+// console.log(classmates[name])
+// // classmates[name] == "Sophie" ? classmates[name]+ "&" : classmates[name]+ "!"
+console.log(classmates)
 
