@@ -87,7 +87,7 @@ color.forEach(function (element, index) {
         console.log(`${position}${ordinal[2]} choice is ${colorName}`)
     } else if (colorName == color[2]) {
         console.log(`${position}${ordinal[3]} choice is ${colorName}`)
-    } else if (colorName == color[3] || colorName == color[4] || colorName == color[5] || colorName == color[6]) {
+    } else {
         console.log(`${position}${ordinal[0]} choice is ${colorName}`)
     }
 })
