@@ -120,7 +120,12 @@ let voters = [
     {name:'Bob' , age: 30, voted: true},
 ];
 
-let count = voters.reduce((a,b,c)=> {
-    return a + c;
-}, 1)
+let count = voters.reduce((acc,eleme)=> {
+    if (eleme.voted == true) {
+        return ++acc;
+    } else  {
+        return acc
+
+    }
+},0)
 console.log(count)
