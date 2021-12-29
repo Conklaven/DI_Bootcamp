@@ -92,7 +92,7 @@ class animal {
 }
   class Mamal extends animal {
     constructor(animalName, animalType, animalColor, animalSound) {
-      super(name);
+      super(name, type, color);
       this.sound = animalSound;
     }
     sound(){
