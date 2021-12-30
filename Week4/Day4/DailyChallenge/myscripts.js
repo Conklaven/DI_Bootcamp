@@ -1,4 +1,4 @@
-class video {
+class Video {
     constructor(videoTitle, videoUploader, videoTime) {
         this.title = videoTitle;
         this.uploader = videoUploader;
@@ -9,5 +9,5 @@ class video {
     }
 }
 
-let theMatrix = new video( "The Matrix", "Natalie", 120);
+let theMatrix = new Video( "The Matrix", "Natalie", 120);
 theMatrix.watch();
