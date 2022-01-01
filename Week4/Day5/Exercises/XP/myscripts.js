@@ -132,7 +132,7 @@ function myFunction() {
             robotDiv.appendChild(robotName)
             robotDiv.appendChild(robotEmail)
             robotName.setAttribute("id", "name")
-            robotImg.style.height ="70%"
+            robotImg.style.height ="60%"
             robotImg.style.margin ="auto"
             robotImg.style.marginTop = "10px"
             robotImg.style.background = "darkBlue"
