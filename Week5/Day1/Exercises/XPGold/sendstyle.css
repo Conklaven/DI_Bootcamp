@@ -1,0 +1,16 @@
+.container{
+    margin: auto;
+    width: 70%;
+    height:150px;
+    text-align: center;
+    /* height: 50%; */
+    background-color: white;
+    border-radius: 50%;
+    
+}
+body{
+    background-color: blue;
+}
+h1{
+    padding:20px;
+}
