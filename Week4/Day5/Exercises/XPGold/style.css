@@ -1,0 +1,26 @@
+.container {
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+}
+.title{
+    font-size: 70px;
+}
+tbody{
+    padding: 20px;
+}
+.table{
+    width: 500px;
+    margin: auto;
+    text-align: center;
+    height:500px;
+}
+.left, .middle{
+    border-right: 5px solid black;
+    width: 33%;
+}
+.center {
+    border-top: 5px solid black;
+    height: 33%;
+    border-bottom: 5px solid;
+}
