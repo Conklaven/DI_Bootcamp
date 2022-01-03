@@ -5,7 +5,6 @@ let welcomeText = document.createTextNode(`Thank You for Registering`)
 welcome.appendChild(welcomeText)
 container.appendChild(welcome)
 container.classList.add("container")
-console.log(searchOBJ.values())
 for (let [key, value] of searchOBJ.entries()) {
     let body = document.body
     let newdiv = document.createElement("div")
