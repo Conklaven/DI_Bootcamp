@@ -101,18 +101,21 @@ function toJs() {
 }
 toJs()
 .then(toMorse)
-.then(joinWords)
+// .then(joinWords)
+// .then((result) => console.log(result))
+.catch((err) => console.log(err))
+.finally(() => console.log('done'));
+
 let morseCode = []
 
 function toMorse(morseJS) {
-    console.log(morseJS)
+    // console.log(morseJS)
     let newMorse = new Promise(function (resolve, reject) {
         let ask = prompt("enter a word")
         if (morseJS != undefined) {
             for (let i = 0; i < ask.length; i++) {
-                
                 let lower =ask[i].toLowerCase()
-                morseCode += ` ${morseJS[lower]} `
+                morseCode += ` ${morseJS[lower]}\n`
             }
             resolve(morseCode)
         } else {
@@ -124,16 +127,16 @@ console.log(morseCode)
     return morseJS
 }
 
-function joinWords(){
-    let morseJS = new Promise(function (resolve, reject) {
-        if (0 == 0) {
-            console.log(morseJS)
-            resolve(object)
-        } else {
-            reject(morse)
-        }
+// function joinWords(){
+//     let morseJS = new Promise(function (resolve, reject) {
+//         let result = morseCode.join("\n");
+//         if (0 == 0) {
+//             resolve(result)
+//         } else {
+//             reject(result)
+//         }
 
-    })
+//     })
 
-    return morseJS
-}
+//     return morseJS
+// }
