@@ -82,7 +82,8 @@ let morse = `{
         "/": "-..-.",
         "@": ".--.-.",
         "(": "-.--.",
-        ")": "-.--.-"
+        ")": "-.--.-",
+        " ": " "
       }`
 
 let object;
@@ -102,7 +103,7 @@ function toJs() {
 }
 toJs()
     .then(result => toMorse(result))
-    .then(next => console.log(next))
+    .then(next => showWord(next))
     // .then((result) => console.log(result))
     .catch((err) => console.log(err))
     .finally(() => console.log('done'));
@@ -115,10 +116,19 @@ function toMorse(morseJS) {
     let newMorse = new Promise(function (resolve, reject) {
         let ask = prompt("enter a word")
         if (morseJS != undefined) {
+            let body = document.body
             for (let i = 0; i < ask.length; i++) {
                 let lower = ask[i].toLowerCase()
                 morseCode += ` ${morseJS[lower]}\n`
+                
             }
+            let word = document.createTextNode(ask)
+            let wordcontain = document.createElement("div")
+            
+            wordcontain.style.textAlign = "center"
+            wordcontain.style.fontSize = "40px"
+            wordcontain.appendChild(word)
+            body.appendChild(wordcontain)
             resolve(morseCode)
         } else {
             reject(morse)
@@ -128,6 +138,19 @@ function toMorse(morseJS) {
     // console.log(morseCode)
     return morseCode
 }
+
+
+
+function showWord(code) {
+    let body =document.body
+    let morse = document.createElement("div")
+    let text = document.createTextNode(code)
+    morse.style.textAlign = "center"
+    morse.style.fontSize = "100px"
+    morse.appendChild(text)
+    body.appendChild(morse)
+}
+
 
 // function joinWords(){
 //     let morseJS = new Promise(function (resolve, reject) {

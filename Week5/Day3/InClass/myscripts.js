@@ -72,33 +72,64 @@
 // # Part III
 // If the giphy API doesn't find a gif depending on the word (because the word can be strange),then instead of displaying an empty image, display a gif that says "404 ERROR"
 
-let start = (() => {
-    fetch(`http://random-word-api.herokuapp.com/word?number=1`)
-        .then(result => {
-            return result.json()
-        })
-        .then(run => {
-            console.log(run[0])
-            fetch(`https://api.giphy.com/v1/gifs/random?tag=%22${run[0]}%22&api_key=hpvZycW22qCjn5cRM1xtWB8NKq4dQ2My`)
-                .then(result => {
-                    return result.json()
-                })
-                .then(gif => {
-                    return gif.data.images.original.url
-                })
-                .then(url => {
-                    let body = document.body
-                    let div = document.createElement('img')
-                    div.setAttribute('src', url)
-                    body.appendChild(div)
-                })
-                .catch(err => {
-                    let body = document.body
-                    let div = document.createElement('img')
-                    div.setAttribute('src', 'https://c.tenor.com/IHdlTRsmcS4AAAAC/404.gif')
-                    body.appendChild(div)
-                    
-                })
-                .finally(() => console.log('done'))
-        })
-})();
+// let start = (() => {
+//     fetch(`http://random-word-api.herokuapp.com/word?number=1`)
+//         .then(result => {
+//             return result.json()
+//         })
+//         .then(run => {
+//             console.log(run[0])
+//             fetch(`https://api.giphy.com/v1/gifs/random?tag=%22${run[0]}%22&api_key=hpvZycW22qCjn5cRM1xtWB8NKq4dQ2My`)
+//                 .then(result => {
+//                     return result.json()
+//                 })
+//                 .then(gif => {
+//                     return gif.data.images.original.url
+//                 })
+//                 .then(url => {
+//                     let body = document.body
+//                     let div = document.createElement('img')
+//                     div.setAttribute('src', url)
+//                     body.appendChild(div)
+//                 })
+//                 .catch(err => {
+//                     let body = document.body
+//                     let div = document.createElement('img')
+//                     div.setAttribute('src', 'https://c.tenor.com/IHdlTRsmcS4AAAAC/404.gif')
+//                     body.appendChild(div)
+
+//                 })
+//                 .finally(() => console.log('done'))
+//         })
+// })();
+
+async function start() {
+    try {
+        let fetched = await fetch(`http://random-word-api.herokuapp.com/word?number=1`);
+        console.log(fetched);
+        if (fetched.status === 200) {
+            let result = await fetched.json();
+            console.log(result);
+            let fetchedNext = await fetch(`https://api.giphy.com/v1/gifs/random?tag=%22${result[0]}%22&api_key=hpvZycW22qCjn5cRM1xtWB8NKq4dQ2My`);
+            console.log(fetchedNext)
+            let gif = await fetchedNext.json();
+            console.log(gif)
+            let gifURL = await gif.data.images.original.url
+            console.log(gifURL)
+            let body = document.body
+            let div = document.createElement('img')
+            div.setAttribute('src', gifURL)
+            body.appendChild(div)
+
+        } else {
+            throw new Error(`error`)
+        }
+    } catch {
+        let body = document.body
+        let div = document.createElement('img')
+        div.setAttribute('src', 'https://c.tenor.com/IHdlTRsmcS4AAAAC/404.gif')
+        body.appendChild(div)
+    }
+}
+
+start()
