@@ -1,0 +1,44 @@
+.title{
+    text-align: center;
+}
+.logo{
+    width: 30%;
+}
+body {
+    background-image: url("https://i.giphy.com/media/TxVVB6PfWMjE4/200.webp");
+}
+.result{
+    border: 5px solid #e4b300;
+    border-radius:5%;
+    width:35%;
+    text-align: center;
+    margin: auto;
+    height: 300px;
+    color: #e4b300;
+    font-size:25px;
+}
+.container{
+    margin-top: 30px;
+}
+
+#loading {
+    margin-top: 74px;
+    font-size: 30px;
+    color: white
+}
+#Name{
+    font-size:40px;
+    margin-top:55px;
+}
+#btn {
+    border: 5px solid #e4b300;
+    border-radius: 10px;
+    background: #b2b2b2;
+    text-align: center;
+    font-size: 30px;
+}
+#btnContainer{
+    margin-top: 10px;
+    margin-bottom: 30px;
+    text-align: center;
+}
