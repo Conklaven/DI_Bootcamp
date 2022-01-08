@@ -1,0 +1,18 @@
+body {
+    background-image: url("https://i.pinimg.com/originals/d6/fd/c8/d6fdc83f651e1c1460625cd25da61cd0.jpg")
+}
+
+div#container {
+    text-align: center;
+    width: 30%;
+    margin: auto;
+    margin-top: 60px;
+    font-size:30px;
+    /* border-top: 1px solid #000; */
+    background: rgba(175, 164, 171, 0.315)
+
+}
+#result{
+    display: none;
+    font-size: 70px;
+}

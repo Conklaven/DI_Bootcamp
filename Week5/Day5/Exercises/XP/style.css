@@ -58,7 +58,9 @@ body {
     display: none;
     left: 25%;
     /* opacity: 80%; */
-    border-radius: 100%;
+    border-bottom-right-radius: 100%;
+    border-bottom-left-radius: 100%;
+    
   }
   
   .star-wars {
