@@ -9,10 +9,14 @@ div#container {
     margin-top: 60px;
     font-size:30px;
     /* border-top: 1px solid #000; */
-    background: rgba(175, 164, 171, 0.315)
+    background: rgba(175, 164, 171, 0.315);
+    color: white;
 
 }
 #result{
     display: none;
     font-size: 70px;
+}
+.title{
+    font-size: 70px
 }
