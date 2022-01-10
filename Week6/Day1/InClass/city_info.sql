@@ -37,10 +37,10 @@
 -- SELECT event_datetime FROM city_info WHERE city = 'Geneva' AND humidity >60 OR city = 'Geneva' AND humidity <40;
 
 -- Question 8 
--- SELECT * FROM city_info WHERE EXTRACT(DOW)
+-- SELECT * FROM city_info WHERE EXTRACT(DOW FROM event_datetime) AS , city ORDER BY light DESC LIMIT 1;
 
 -- Question 9
--- SELECT * FROM city_info WHERE city ILIKE 'S%';
+-- SELECT DISTINCT city FROM city_info WHERE city ILIKE 'S%';
 
 
 
