@@ -62,6 +62,7 @@
 -- SELECT AVG(salary) FROM employee WHERE Job ='SOFTWARE ENGINEER';
 
 -- 5
+-- left join
 
 -- 6
 -- SELECT employee.EmpFName, employee.EmpLName, employee.Deptcode, department.DeptName, department.locale
