@@ -1,0 +1,42 @@
+body{
+    margin: 0;
+    background-image: url("https://www.freecodecamp.org/news/content/images/size/w2000/2021/06/w-qjCHPZbeXCQ-unsplash.jpg");
+    font-family: Helvetica, sans-serif;
+}
+.container {
+    text-align: center;
+    margin: 50px;
+    margin-bottom: 10px;
+}
+form#task {
+    color: white;
+    font-size: 30px;
+    width: fit-content;
+    margin: auto;
+    border: 5px solid black;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+#success {
+    color: green;
+}
+
+input {
+    margin: 10px;
+    font-size: 20px;
+}
+button#submit {
+    font-size: 30px;
+    margin: 10px;
+}
+#title {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+#success{
+    margin-top: 10px;
+    text-align: center;
+    font-size: 30px;
+}
