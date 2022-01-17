@@ -1,0 +1,14 @@
+header{
+    border: 2px dashed blue;
+    font-size: 20px;
+    color: red;
+    text-align: center;
+}
+#btn{
+    text-align: center;
+    font-size: 20px;
+    margin-top: 20px;
+}
+#clickMe{
+    margin-left: 20px;
+}
