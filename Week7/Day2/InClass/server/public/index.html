@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>HOME PAGE</h1>
+    <!-- <button onClick="getData()">Get Users</button> -->
+    <button onClick="getData()">Get Users</button>
+    <!---->
+    <!-- <form action=""></form> -->
+
+    <div id="root"></div>
+    <h2>Get</h2>
+    <form action="http://localhost:5000/login" method="get">
+        username: <input type="text" name="username" value="">
+        password: <input type="password" name="password" value="">
+        <input type="submit" name="submit" value="submit">
+    </form>
+    <h2>post</h2>
+    <form action="http://localhost:5000/login" method="POST">
+        username: <input type="text" name="username" value="">
+        password: <input type="password" name="password" value="">
+        <input type="submit" name="submit" value="submit">
+    </form>
+    <h2>fetch</h2>
+        username: <input type="text" name="username" id="username" value="">
+        password: <input type="password" name="password" id="password" value="">
+        <button onClick="sendData()">Submit</button>
+    </form>
+    <script src="scripts.js" charset="utf-8" ></script>
+</body>
+</html>
