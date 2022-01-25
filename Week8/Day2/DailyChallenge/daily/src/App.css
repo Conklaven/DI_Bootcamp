@@ -13,7 +13,7 @@
   }
 }
 
-.App-header {
+/* .App-header {
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
@@ -21,9 +21,14 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  /* color: white; */
+/* } */ 
+body {
+  text-align: center;
+  color: #222;
+  font-size: 24px;
+  font-family: sans-serif;
 }
-
 .App-link {
   color: #61dafb;
 }
@@ -32,7 +37,35 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+.Languages {
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+  width: 400px;
+  margin: 10px auto;
+}
+
+.language {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 40px;
+  background-color: #ffebcd;
+  border: 1px solid #222;
+  margin: 2px;
+}
+
+.btn {
+  color: green;
+  background-color: transparent;
+  border: none;
+  font-size: 30px;
+  outline: none;
+  cursor: pointer;
 }
