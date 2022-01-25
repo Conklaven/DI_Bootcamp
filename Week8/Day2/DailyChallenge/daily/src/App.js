@@ -20,10 +20,10 @@ class App extends React.Component {
   
     }
   
-    vote = (e) => {
+    vote = (i) => {
       // console.log(e.target.id)
       let result = this.state
-      result.languages[e.target.id].votes += 1
+      result.languages[i].votes += 1
       // console.log(result)
       this.setState({result});
     }
@@ -34,10 +34,10 @@ class App extends React.Component {
           <header className="App-header">
             <h1>Vote Your Language</h1>
             <div className="Languages">
-          <div className="language" ><div>{this.state.languages[0].votes}</div> {this.state.languages[0].name}  <button className="btn" id="0" onClick={this.vote}>Vote Here</button></div>
-           <div className="language" ><div>{this.state.languages[1].votes}</div> {this.state.languages[1].name}  <button className="btn" id="1" onClick={this.vote}>Vote Here</button></div>
-           <div className="language" ><div>{this.state.languages[2].votes}</div> {this.state.languages[2].name}  <button className="btn" id="2" onClick={this.vote}>Vote Here</button></div>
-           <div className="language" ><div>{this.state.languages[3].votes}</div> {this.state.languages[3].name}  <button className="btn" id="3" onClick={this.vote}>Vote Here</button></div>
+          <div className="language" ><div>{this.state.languages[0].votes}</div> {this.state.languages[0].name}  <button className="btn"  onClick={() => this.vote(0)}>Vote Here</button></div>
+           <div className="language" ><div>{this.state.languages[1].votes}</div> {this.state.languages[1].name}  <button className="btn" onClick={() => this.vote(1)}>Vote Here</button></div>
+           <div className="language" ><div>{this.state.languages[2].votes}</div> {this.state.languages[2].name}  <button className="btn"  onClick={() => this.vote(2)}>Vote Here</button></div>
+           <div className="language" ><div>{this.state.languages[3].votes}</div> {this.state.languages[3].name}  <button className="btn"  onClick={() => this.vote(3)}>Vote Here</button></div>
            </div>
           </header>
         </div>
