@@ -14,6 +14,12 @@ const ToDoForm = ({ addTask }) => {
         addTask(userInput);
         setUserInput("");
         e.preventDefault();
+        let tasks = document.querySelectorAll('.todo')
+        console.log(tasks.length)
+        if(tasks.length >=0){
+            let notasks = document.getElementById('noTask')
+            notasks.style.display = 'none'
+        }
 
         }
     }

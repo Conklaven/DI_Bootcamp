@@ -21,11 +21,18 @@ function App() {
 
   const handleFilter = (id) => {
     let filtered = toDoList.filter(task => {
+      notasks()
       return !task.complete;
     });
     setToDoList(filtered);
   }
-
+const notasks = () =>{
+  let tasks = document.querySelectorAll('.todo')
+  if (tasks.length === 1){
+    let notasks = document.getElementById('noTask')
+    notasks.style.display = 'block'
+  }
+} 
   const addTask = (userInput ) => {
     let copy = [...toDoList];
     copy = [...copy, { id: toDoList.length + 1, task: userInput, complete: false }];
@@ -35,7 +42,10 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <ToDoList toDoList={toDoList} handleToggle={handleToggle} handleFilter={handleFilter}/>
+      <div className="container">
+        <div id="noTask">You have no tasks left</div>
+      <ToDoList className="list" toDoList={toDoList} handleToggle={handleToggle} handleFilter={handleFilter}/>
+      </div>
       <ToDoForm addTask={addTask}/>
     </div>
   );
