@@ -36,3 +36,39 @@
     transform: rotate(360deg);
   }
 }
+
+.robotcontain {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background: linear-gradient(
+270deg
+,#071b52 0,teal);
+}
+
+.nav{
+  text-align: center;
+}
+
+@font-face {
+  font-family: 'SEGA LOGO FONT';
+  font-style: normal;
+  font-weight: normal;
+  src: local('SEGA LOGO FONT'), url('./media/SEGA.woff') format('woff');
+  }
+  
+  h1 {
+    font-family: 'SEGA LOGO FONT';
+    font-weight: 200;
+    color: #0ccac4;
+  }
+
+  .Title{
+    text-align: center;
+  }
