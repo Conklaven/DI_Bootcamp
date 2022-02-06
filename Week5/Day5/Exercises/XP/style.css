@@ -110,4 +110,13 @@ body {
     .result {
       width: 95% !important;
     }
+    .fade{
+      left: 10% !important;
+      top: 0 !important;
+      width: 80% !important;
+    }
+    #btn, #play {
+      margin-top: 5px;
+      margin-right: 1px;
+  }
   }
