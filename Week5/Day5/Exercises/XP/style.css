@@ -105,3 +105,9 @@ body {
       transform: rotateX(25deg) translateZ(-2500px);
     }
   }
+
+  @media only screen and (max-width: 600px) {
+    .result {
+      width: 95% !important;
+    }
+  }
