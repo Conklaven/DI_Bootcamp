@@ -13,5 +13,5 @@ app.listen(process.env.PORT, ()=>{
 
 
 app.get('/api/hello', (req, res) => {
-    res.json(<h1>Hello From Express</h1>)
+    res.json({message:`Hello From Express`})
    })

@@ -37,6 +37,8 @@ const notasks = () =>{
     let copy = [...toDoList];
     copy = [...copy, { id: toDoList.length + 1, task: userInput, complete: false }];
     setToDoList(copy);
+    let id = toDoList.length
+    localStorage.setItem(`task${id}`, userInput)
   }
 
   return (

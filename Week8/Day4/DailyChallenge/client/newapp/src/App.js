@@ -3,24 +3,26 @@ import './App.css';
 import Welcome from './Welcome';
 import React from 'react';
 
-
+let message;
 
  class App extends React.Component {
-  constructor(props){
-    super(props);
+  constructor(){
+    super();
     this.state = {
       data: 'test'
     }
 
   }
-  componentDidMount(){
-      async function test(){
-        let result = fetch('http://localhost:5000/api/hello')
-        .then(response => (response))
-        .then(data => console.log(data))
-        console.log(result)
-   }
-   test()
+
+
+  async componentDidMount(){
+       
+        let test = await fetch('http://localhost:5000/api/hello')
+        let newdata = await test.json()
+        this.setState({data: newdata.message})
+        // .then(response => response.json())
+        // .then(newdata => this.setState({data: newdata.message}))
+  
   }
 
   render(){

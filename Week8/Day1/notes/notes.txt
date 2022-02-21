@@ -1,0 +1,2 @@
+How to iniate REACT
+npx create-react-app <name of app>
