@@ -18,7 +18,7 @@ class RobotArray extends Component {
         // const {arr,txt} = this.props;
         const filterArr = this.props.array.filter(item => {
             console.log(item)
-            return item.name.toLowerCase().includes(this.props.txt.toLowerCase());
+            return item.name.toLowerCase().includes(this.props.txt.toLowerCase()) || item.email.toLowerCase().includes(this.props.txt.toLowerCase());
         })
         return(
            

@@ -10,7 +10,7 @@ const Card = (props) => {
         <>
 
     <div className='tc grow bg-light-green br3 pa3 ma2 dib bw2 shadow-5'  id={id}>
-        <img height= '200px' src={`https://robohash.org/${id}?set=set2`}></img>
+        <img src={`https://robohash.org/${id}`}></img>
         <h2 id={id}>{name}</h2>
         <h4 id={id}>{email}</h4>
     </div>
