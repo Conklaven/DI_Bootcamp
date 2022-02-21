@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Shop</title>
 </head>
-
 <body>
-    <input type="">
-    
-    <script src="myscripts.js"></script>
+    <%- include('./headers'); %>
+    <h1>Shop Ejs</h1>
+<div>
+    <%- data.forEach(item=>  { %> 
+        <h2>
+        <% item.name %></h2>
+    </div>
+        <%- }) %>
+
 </body>
-
-
-
 </html>
